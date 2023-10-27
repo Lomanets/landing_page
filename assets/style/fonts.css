@@ -1,0 +1,59 @@
+@font-face {
+    font-weight: 400; 
+    font-family: 'Inter';
+    src: url("../fonts/inter/Inter-Regular.woff");
+}
+
+@font-face {
+    font-weight: 500; 
+    font-family: 'Inter';
+    src: url("../fonts/inter/Inter-Medium.woff");
+}
+
+@font-face {
+    font-weight: 600; 
+    font-family: 'Inter';
+    src: url("../fonts/inter/Inter-SemiBold.woff");
+}
+
+@font-face {
+    font-weight: 400; 
+    font-family: 'SF Pro Display';
+    src: url("../fonts/SF_pro_display/SF-Pro-Display-Regular.woff");
+}
+
+@font-face {
+    font-weight: 500; 
+    font-family: 'SF Pro Display';
+    src: url("../fonts/SF_pro_display/SF-Pro-Display-Medium.woff");
+}
+
+@font-face {
+    font-weight: 600; 
+    font-family: 'SF Pro Display';
+    src: url("../fonts/SF_pro_display/SF-Pro-Display-Semibold.woff");
+}
+
+@font-face {
+    font-weight: 700; 
+    font-family: 'SF Pro Display';
+    src: url("../fonts/SF_pro_display/SF-Pro-Display-Bold.woff");
+}
+
+@font-face {
+    font-weight: 400; 
+    font-family: 'SF Pro Text';
+    src: url("../fonts/SF_pro_text/SFProText-Regular.woff");
+}
+
+@font-face {
+    font-weight: 500; 
+    font-family: 'SF Pro Text';
+    src: url("../fonts/SF_pro_text/SFProText-Medium.woff");
+}
+
+@font-face {
+    font-weight: 700; 
+    font-family: 'SF Pro Text';
+    src: url("../fonts/SF_pro_text/SFProText-Bold.woff");
+}

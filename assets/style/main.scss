@@ -1,0 +1,238 @@
+@import url(./normalize.css);
+@import url(./fonts.css);
+
+$bg-grey: #F5F9FF;
+$bg-purple: #ECF2FE;
+$main-blue: #49A1F1;
+$main-purple: #506CCF;
+$main-white: #FFFFFF;
+$text-black: #08123A;
+$text-dark-gray: #5F6B77;
+$text-light-gray: #E9EAF0;
+$text-blue-gray: #8B9FCC;
+
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    padding-top: 28px;
+    padding-bottom: 39px;
+    background: $bg-grey;
+    background-image: linear-gradient(45deg, $main-purple 0%, #3453C2 100%);
+    background-size: 458px auto;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    right: -46px;
+    width: 1265px;
+    margin: 0 auto;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-top__logo {
+    img {
+        width: 37px;
+        height: 37px;
+    }
+}
+
+.header-top__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 35px;
+    margin-left: 204px;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: $text-dark-gray;
+        font-family: SF Pro Text;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+}
+
+.header-top__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header-top__lang {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: $text-blue-gray;
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px; 
+    margin-right: 78px;
+}
+
+.header-top__tel {
+    color: $main-white;
+    text-decoration: none;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px; 
+    margin-right: 15px;
+}
+
+.header-top__button {
+    width: 127px;
+    height: 46px;
+    background: $main-blue;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: $main-white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px; 
+}
+
+.header-offer {
+   
+}
+
+.header-offer__title {
+    margin-top: 164px;
+    color: $text-black;
+    font-family: "SF Pro Display";
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px; 
+    max-width: 570px;
+}
+
+.header-offer__text {
+    margin-top: 58px;
+    color: $text-dark-gray;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px; 
+    max-width: 500px;
+}
+
+.header-offer__button {
+    margin-top: 58px;
+    border-radius: 10px;
+    background: $main-purple;
+    box-shadow: 0px 20px 35px 0px #DFE8F4;
+    width: 170px;
+    height: 54px;
+    border: none;
+    color: $main-white;
+    font-family: "SF Pro Text";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px; 
+    cursor: pointer;
+}
+
+.header-offer__arrow {
+    margin-top: 43px;
+    cursor: pointer;
+    width: 54px;
+    height: 54px;
+    border-radius: 8px;
+    border: 1px solid $text-light-gray;
+    background: transparent;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.header-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}
+
+.header-bg__image1 {
+    position: absolute;
+    top: 131px;
+    right: 285px;
+}
+
+.header-bg__image3 {
+    position: absolute;
+    top: 450px;
+    right: 435px;
+}
+
+.header-bg__image2 {
+    position: absolute;
+    top: 131px;
+    right: 0px;
+}
+
+.header-bg__circle-blue {
+    position: absolute;
+    top: 102px;
+    right: 586px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 20px 35px #DFE8F4);
+    background: linear-gradient(45deg, #506CCF 0%, #3453C2 100%);
+}
+
+.header-bg__circle-red {
+    position: absolute;
+    top: 298px;
+    right: 397px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #FF8B8B;
+    filter: drop-shadow(0px 20px 35px rgba(90, 50, 50, 0.40));
+}
+
+.header-bg__circle-yellow {
+    position: absolute;
+    bottom: 44px;
+    right: 292px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #FFC86F;
+    filter: drop-shadow(0px 20px 35px rgba(156, 101, 34, 0.30));
+}
+
+.header-bg__rectangle {
+    position: absolute;
+    top: 523px;
+    right: 403px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid $text-light-gray;
+    background: transparent;
+}
