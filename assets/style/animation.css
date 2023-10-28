@@ -1,0 +1,57 @@
+@keyframes move-blue {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    50% {
+        transform: translate(30px, 30px) scale(3);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+@keyframes move-red {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(10px, -80px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+@keyframes move-yellow {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    50% {
+        transform: translate(-50px, -5px) scale(1.5);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+@keyframes move-rectangle {
+    0% {
+        transform: translate(0px, 0px), rotate(0deg);
+    }
+    50% {
+        transform: translate(40px, 30px) rotate(180deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(359deg);
+    }
+}
+
+@keyframes move-left {
+    0%{
+        transform: translateX(0px);
+    }
+    90%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./fonts.css);
+@import url(./animation.css);
 body, h1, h2, h3, h4, h5, h6, p, ul, li {
   margin: 0;
   padding: 0;
@@ -20,6 +21,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
 .container {
   position: relative;
   right: -46px;
+  z-index: 6;
   width: 1265px;
   margin: 0 auto;
 }
@@ -49,6 +51,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+  transition: color 0.3s;
+}
+.header-top__list a:hover {
+  color: #8B9FCC;
 }
 
 .header-top__wrap {
@@ -92,6 +98,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   font-size: 16px;
   font-weight: 600;
   line-height: 22px;
+  transition: transform 0.3s;
+}
+.header-top__button:hover {
+  transform: scale(1.05);
 }
 
 .header-offer__title {
@@ -128,6 +138,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   font-weight: 500;
   line-height: 22px;
   cursor: pointer;
+  transition: transform 0.3s;
+}
+.header-offer__button:hover {
+  transform: scale(1.05);
 }
 
 .header-offer__arrow {
@@ -138,6 +152,11 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   border-radius: 8px;
   border: 1px solid #E9EAF0;
   background: transparent;
+  transition: all 0.3s;
+}
+.header-offer__arrow:hover {
+  background: #E9EAF0;
+  transform: translateY(3px);
 }
 .header-offer__arrow a {
   display: inline-flex;
@@ -152,6 +171,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   width: 100%;
   height: 100%;
   top: 0px;
+  user-select: none;
 }
 
 .header-bg__image1 {
@@ -172,6 +192,14 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   right: 0px;
 }
 
+.header-bg img {
+  z-index: 7;
+  transition: transform 0.5s;
+}
+.header-bg img:hover {
+  transform: translateY(-10px);
+}
+
 .header-bg__circle-blue {
   position: absolute;
   top: 102px;
@@ -181,6 +209,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   border-radius: 50%;
   filter: drop-shadow(0px 20px 35px #DFE8F4);
   background: linear-gradient(45deg, #506CCF 0%, #3453C2 100%);
+  animation: 33s linear 0s infinite move-blue;
 }
 
 .header-bg__circle-red {
@@ -192,6 +221,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   border-radius: 50%;
   background: #FF8B8B;
   filter: drop-shadow(0px 20px 35px rgba(90, 50, 50, 0.4));
+  animation: 40s linear 0s infinite move-red;
 }
 
 .header-bg__circle-yellow {
@@ -203,6 +233,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   border-radius: 50%;
   background: #FFC86F;
   filter: drop-shadow(0px 20px 35px rgba(156, 101, 34, 0.3));
+  animation: 33s linear 0s infinite move-yellow;
 }
 
 .header-bg__rectangle {
@@ -214,6 +245,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   border-radius: 10px;
   border: 2px solid #E9EAF0;
   background: transparent;
+  animation: 33s linear 0s infinite move-rectangle;
 }
 
 .header-bg__image {
@@ -229,6 +261,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: 33s linear 0s infinite move-rectangle;
 }
 .header-bg__image::after {
   content: "";
